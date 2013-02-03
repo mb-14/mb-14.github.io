@@ -4,16 +4,9 @@
    Author's custom styles
    ========================================================================== */
    
-#Back {
-	background: url(../img/serenity.jpg) no-repeat center;
-	height: 768px;
-	margin-top:-20px;
-	
-}
-
 .header{
 margin-top:10%;
-
+height:480px;
 }
 .header p{
 margin-top:20px;
@@ -25,20 +18,12 @@ font-size:18px;
 color: #000;
 font-size:50px;}
 
-.project {
-padding-top:5px;
-}
+
 .project h5{
 width:200px;
 margin-top:-5px;
 }
-.project h3{
 
-font-size:25px;
-}
 #new_line{ 
 clear: left; 
 } 
-#footer {
-margin-bottom:0px;
-}
