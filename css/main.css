@@ -18,9 +18,13 @@ font-size:18px;
 color: #000;
 font-size:50px;}
 
+.project{
+float:left;
+width:200px;
+margin-right:25px;
+}
 
 .project h5{
-width:200px;
 margin-top:-5px;
 }
 
