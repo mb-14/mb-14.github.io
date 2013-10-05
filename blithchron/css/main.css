@@ -1,0 +1,15 @@
+body { pointer-events: auto!important; }
+#header{
+margin-top: 50px;
+}
+.menu { position: fixed; top: 50px; left: 50px; z-index: 99999;  transition: opacity 0.5s;  text-align: left;}
+.present .menu { opacity: 1; }
+.menu i  { opacity: 0.4; }
+.menu img { opacity: 0.4; }
+.menu a:hover img { opacity: 1;  }
+.menu a:hover i { opacity: 1; transition: opacity 0.5s;  }
+.menu a { font-family: 'Quicksand Bold'; font-weight: 700; color: #fff; font-size: 22px; text-decoration: none; display: block; position: relative;}
+.menu span { position: relative; top: -8px; opacity: 0; left: 20px; transition: opacity 0.5s; }
+.menu a:hover span { opacity: 1; }
+
+.menu .menu_hover { position: absolute; top: -11px; left: -13px; opacity: 0; transition: opacity 0.5s;  }
