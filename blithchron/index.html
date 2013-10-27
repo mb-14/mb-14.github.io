@@ -13,9 +13,8 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
     <script src="js/impress.js"></script>
-
-    
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
@@ -31,13 +30,13 @@
 
    <div class="menu">
            <ul>
-              <li><a href="#home"><i class="icon-home icon-2x"></i><span>Home</span></a></li>
-              <li><a href="#aboutus"><i class="icon-info-sign icon-2x"></i><span>About Us</span></a></li>
-              <li><a href="#proshows"><i class="icon-star icon-2x"></i><span>Pro-shows</span></a></li>
-              <li><a href="#events"><i class="icon-flag icon-2x"></i><span>Events</span></a></li>
-              <li><a href="#sponsors"><i class="icon-inr icon-2x"></i><span>Sponsors</span></a></li>
-              <li><a href="#register"><i class="icon-file-text icon-2x"></i><span>Register</span></a></li>
-              <li><a href="#contactus"><i class="icon-phone icon-2x"></i><span>Contact Us</span></a></li>
+              <li class="animated fadeInDown"><a href="#home"><i class="icon-home icon-2x"></i><span>Home</span></a></li>
+              <li class="animated fadeInDown" style="-webkit-animation-delay: 0.5s;"><a href="#aboutus"><i class="icon-info-sign icon-2x"></i><span>About Us</span></a></li>
+              <li class="animated fadeInDown"  style="-webkit-animation-delay: 0.7s;"><a href="#proshows"><i class="icon-star icon-2x"></i><span>Pro-shows</span></a></li>
+              <li class="animated fadeInDown"  style="-webkit-animation-delay: 0.9s;"><a href="#events"><i class="icon-flag icon-2x"></i><span>Events</span></a></li>
+              <li class="animated fadeInDown" style="-webkit-animation-delay: 1.1s;"><a href="#sponsors"><i class="icon-inr icon-2x"></i><span>Sponsors</span></a></li>
+              <li class="animated fadeInDown" style="-webkit-animation-delay: 1.3s;"><a href="#register"><i class="icon-file-text icon-2x"></i><span>Register</span></a></li>
+              <li class="animated fadeInDown" style="-webkit-animation-delay: 1.5s;"><a href="#contactus"><i class="icon-phone icon-2x"></i><span>Contact Us</span></a></li>
            </ul>
         </div>
 
@@ -48,34 +47,42 @@
      <div id="header">   
      <h1>Blithchron`14</h1>
 </div>
+<div id="content"> 
+<video controls src="http://vjs.zencdn.net/v/oceans.mp4"></video>
     </div>
-
-    <div id="aboutus" class="step" data-x="0" data-y="-1500" data-z="1000" data-scale="2">
-     <h1>About Us</h1>
 </div>
-    <div id="proshows" class="step" data-x="-200" data-y="-1500" data-z="-4500" data-rotate="180" data-scale="2">
-        <q>Pro-Shows</q>
+    <div id="aboutus" class="step slide" data-x="0" data-y="-1500" data-z="1000" data-scale="2">
+        <div id="header">  
+     <h1>About Us</h1>
+         </div>
+</div>
+    <div id="proshows" class="step slide" data-x="-3000" data-y="600" data-z="-3500" data-rotate="180" data-scale="3">
+      <div id="header">
+        <h1>Pro-Shows</h1>
+      </div>
     </div>
 
-    <div id="events" class="step" data-x="0" data-y="0" data-scale="4">
+    <div id="events" class="step slide" data-x="0" data-y="0" data-z="-2000" data-scale="4">
+   <div id="header">
     <h1>Events</h1>
+  </div>
     </div>
 
-    <div id="sponsors" class="step" data-x="-500" data-y="3500" data-rotate="90" data-z="2000" data-scale="5">
+    <div id="sponsors" class="step slide" data-x="-500" data-y="2800" data-rotate="90" data-z="2000" data-scale="5">
        <q>Sponsors</q> 
     </div>
 
-    <div id="register" class="step" data-x="-3500" data-y="2100" data-z="-1000" data-rotate="180" data-scale="3">
+    <div id="register" class="step slide" data-x="-4500" data-y="1500" data-z="-1000" data-rotate="180" data-scale="3">
         <q>Register</q>
     </div>
 
   
-    <div id="contactus" class="step" data-x="2825" data-y="2325" data-z="-4500" data-rotate="360" data-scale="2">
+    <div id="contactus" class="step slide" data-x="2225" data-y="2325" data-z="-3500" data-rotate="360" data-scale="3">
         <q>Contact Us</q>
     </div>
 
  
-    <div id="overview" class="step" data-x="-1000" data-y="0" data-scale="7" >
+    <div id="overview" class="step" data-x="-1000" data-y="0" data-scale="8" >
     </div>
 
 </div>

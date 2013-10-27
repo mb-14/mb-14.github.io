@@ -1,6 +1,11 @@
 body { pointer-events: auto!important; }
 #header{
 margin-top: 50px;
+text-align: center;
+}
+#content{
+margin: 0 auto;
+text-align: center;	
 }
 .menu { position: fixed; top: 50px; left: 50px; z-index: 99999;  transition: opacity 0.5s;  text-align: left;}
 .present .menu { opacity: 1; }
