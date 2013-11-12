@@ -22,19 +22,17 @@
 <body class="impress-not-supported">
 
 
-<div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by this site, so you are presented with a simplified version of the website.</p>
-    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+<div id="logo">
+<img src="img/logo.png" height="50" style="float:left">
 </div>
 
-
-   <div class="menu">
+   <div class="menu" style="display: none;">
            <ul>
               <li class="animated fadeInDown"><a href="#home"><i class="icon-home icon-2x"></i><span>Home</span></a></li>
               <li class="animated fadeInDown" style="-webkit-animation-delay: 0.5s;"><a href="#aboutus"><i class="icon-info-sign icon-2x"></i><span>About Us</span></a></li>
-              <li class="animated fadeInDown"  style="-webkit-animation-delay: 0.7s;"><a href="#proshows"><i class="icon-star icon-2x"></i><span>Pro-shows</span></a></li>
-              <li class="animated fadeInDown"  style="-webkit-animation-delay: 0.9s;"><a href="#events"><i class="icon-flag icon-2x"></i><span>Events</span></a></li>
-              <li class="animated fadeInDown" style="-webkit-animation-delay: 1.1s;"><a href="#sponsors"><i class="icon-inr icon-2x"></i><span>Sponsors</span></a></li>
+              <li class="animated fadeInDown"  style="-webkit-animation-delay: 0.7s;"><a href="#events"><i class="icon-flag icon-2x"></i><span>Events</span></a></li>
+               <li class="animated fadeInDown" style="-webkit-animation-delay: 0.9s;"><a href="#sponsors"><i class="icon-inr icon-2x"></i><span>Sponsors</span></a></li>
+              <li class="animated fadeInDown" style="-webkit-animation-delay: 1.1s;"><a href="#pronites"><i class="icon-star icon-2x"></i><span>Pro shows</span></a></li>          
               <li class="animated fadeInDown" style="-webkit-animation-delay: 1.3s;"><a href="#register"><i class="icon-file-text icon-2x"></i><span>Register</span></a></li>
               <li class="animated fadeInDown" style="-webkit-animation-delay: 1.5s;"><a href="#contactus"><i class="icon-phone icon-2x"></i><span>Contact Us</span></a></li>
            </ul>
@@ -54,23 +52,25 @@
     <div id="aboutus" class="step slide" data-x="0" data-y="-1500" data-z="1000" data-scale="2">
         <div id="header">  
      <h1>About Us</h1>
+     <div id="contentbox"><p>To students in Ahmedabad and Gandinagar, Blithchron was more than just a fest, it was the dawning of an era.The idea to embark on this journey was envisioned as a thought being unique. The same thought process translated into creating events that were groundbreaking in their own domain.Events like 'The Butler Did It' , 'Jobless' have continued to leave the audience, participants and media awestruck at the ingenuity of the students. Blithchron has been the host to some of the biggest rock bands in India: Agnee, Motherjane and Parikrama, and with the introduction of a cultural night, we have made sure that Blithchron is a festival that appeals to diverse people across Gujarat. At Blithchron, we have continuously endeavored to make sure that the people who attend the fest are mesmerized by the quality, standard and the stature of our events. 
+</p><p>
+So come one and all at IIT Gandinagar to witness two days of fun and frolic.</p></div>
          </div>
 </div>
-    <div id="proshows" class="step slide" data-x="-3000" data-y="600" data-z="-3500" data-rotate="180" data-scale="3">
-      <div id="header">
-        <h1>Pro-Shows</h1>
-      </div>
-    </div>
 
-    <div id="events" class="step slide" data-x="0" data-y="0" data-z="-2000" data-scale="4">
+    <div id="events" class="step slide" data-x="0" data-y="0" data-z="-1500" data-scale="3">
    <div id="header">
     <h1>Events</h1>
   </div>
     </div>
-
-    <div id="sponsors" class="step slide" data-x="-500" data-y="2800" data-rotate="90" data-z="2000" data-scale="5">
+   <div id="sponsors" class="step slide" data-x="-500" data-y="2800" data-rotate="90" data-z="2000" data-scale="5">
        <q>Sponsors</q> 
     </div>
+
+    <div id="pronites" class="step slide" data-x="-3000" data-y="600" data-z="-1500" data-rotate="180" data-scale="3">
+        <h1>Pro-nites</h1>
+    </div>
+
 
     <div id="register" class="step slide" data-x="-4500" data-y="1500" data-z="-1000" data-rotate="180" data-scale="3">
         <q>Register</q>
@@ -98,11 +98,14 @@ if ("ontouchstart" in document.documentElement) {
 </script>
 
 
-
+<script src="http://codeorigin.jquery.com/jquery-2.0.3.js"></script>
  <script src="js/impress.js"></script>
+<script>
+ 
+                  $(".menu").show();
+                impress().init();
+                impress().goto("home");
 
-<script>impress().init();
-impress().goto("fluxus");
 </script>
 
 
