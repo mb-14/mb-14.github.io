@@ -1,7 +1,7 @@
 
 @font-face{
 font-family: 'Devils Breeze Bold';
-src: url(../fonts/Devil_breeze_bold.ttf);
+src: url('../fonts/Devil_breeze_bold.ttf');
 font-weight: bold;
 }
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
