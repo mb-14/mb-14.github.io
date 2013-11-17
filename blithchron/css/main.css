@@ -1,7 +1,64 @@
-body { pointer-events: auto!important; }
+
+@font-face{
+font-family: 'Devils Breeze Bold';
+src: url(../fonts/Devil_breeze_bold.ttf);
+font-weight: bold;
+}
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+#home #header{
+margin-top: -moz-calc(40% - 150px);
+margin-top: -webkit-calc(40% - 150px);
+margin-top: calc(40% - 150px);  
+text-align: center;
+}
+#home #header h1{
+font-size: 180%;
+text-shadow:5px 5px #000000;
+font-family: 'Devils Breeze Bold';     
+}
+#home #eventsicon{
+display: none;    
+position: absolute;
+margin-top: 5px;
+left: 5px;
+height: 300px;
+}
+#home #eventsicon img{
+height: 100%;
+}
+#home #eventsicon img:hover{
+-webkit-transform: scale(1.09); 
+-moz-transform: scale(1.09); 
+-ms-transform: scale(1.09); 
+-o-transform: scale(1.09); 
+transform: scale(1.09); 
+}
+#home #sponsorsicon{
+display: none;    
+position: absolute;
+margin-top: 5px;
+right: 10px ;
+height: 300px;
+}
+#home #sponsorsicon img{
+height: 100%;
+}
+#home #sponsorsicon img:hover{
+-webkit-transform: scale(1.09); 
+-moz-transform: scale(1.09); 
+-ms-transform: scale(1.09); 
+-o-transform: scale(1.09); 
+transform: scale(1.09); 
+}
 #header{
 margin-top: 50px;
 text-align: center;
+margin-bottom: 5px; 
+}
+#header h1{
+font-size: 50px;
+text-shadow:5px 5px #000000;
+font-family: 'Devils Breeze Bold';     
 }
 #content{
 margin: 0 auto;
@@ -9,8 +66,8 @@ text-align: center;
 }
 #logo{
 position: fixed;
-top:0;
-left: 0;
+top:5px;
+left: 5px;
 }
 #contentbox{
 position:fixed;
@@ -18,7 +75,7 @@ top:50%;
 left:50%;
 margin:-200px 0 0 -45%;
 width: 90%;
-padding: 10px;
+padding: 20px;
 background:rgba(0,0,0,0.8);
 border-radius: 5px;
 height:500px;
@@ -28,11 +85,11 @@ color: #fff;
 box-shadow: 5px 5px 5px #000;
 }
 #contentbox p{
-    text-align: left;
-font-family: 'Droid Sans';
-font-size: 55%;
+text-align: left;
+font-family: Ubuntu;
+font-size: 22px;
 }
-.menu { position: fixed; top: 50px; left: 50px; z-index: 99;  transition: opacity 0.5s;  text-align: left;}
+.menu { pointer-events: auto;position: fixed; top: 200px; left: 50px; z-index: 99;  transition: opacity 0.5s;  text-align: left;}
 .present .menu { opacity: 1; }
 .menu i  { opacity: 0.4; }
 .menu img { opacity: 0.4; }

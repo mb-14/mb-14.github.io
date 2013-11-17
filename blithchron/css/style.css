@@ -62,7 +62,7 @@ body {
     font-family: 'Quicksand Regular', sans-serif;
     min-height: 100%;
     color:#fff;
-    background: url(../img/wall.png);
+    background: url(../img/wall.jpg);
     background-size: 100%;
 }
 
@@ -104,9 +104,13 @@ i, em { font-style: italic }
     position: relative;
     width: 1024px;
     padding: 0px;
-    font-family: 'Quicksand';
     font-size: 48px;
     line-height: 1.5;
+        -webkit-transform-style: preserve-3d;
+    -moz-transform-style:    preserve-3d; /* Y U need this Firefox?! */
+    -ms-transform-style:     preserve-3d;
+    -o-transform-style:      preserve-3d;
+    transform-style:         preserve-3d;
 }
 
 /*
@@ -130,11 +134,13 @@ i, em { font-style: italic }
 
 .slide {
     display: block;
-    width: 900px;
+    width: 1024px;
     height: 700px;
-    padding: 100px;
+    padding: 5px;
     font-family: 'Quicksand', Arial, sans-serif;
 }
+#overview { display: none }
+
 
 .impress-on-overview .step {
     opacity: 1;
