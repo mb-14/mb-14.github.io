@@ -1,7 +1,7 @@
 
 @font-face{
-font-family: 'Devils Breeze Bold';
-src: url('../fonts/Devil_breeze_bold.ttf');
+font-family: 'Devil Breeze Bold';
+src: local('Devil Breeze Bold') url('../fonts/Devil_Breeze_Bold.ttf') format('tff');
 font-weight: bold;
 }
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
@@ -14,7 +14,7 @@ text-align: center;
 #home #header h1{
 font-size: 180%;
 text-shadow:5px 5px #000000;
-font-family: 'Devils Breeze Bold';     
+font-family: 'Devil Breeze Bold';     
 }
 #home #eventsicon{
 display: none;    
@@ -58,7 +58,7 @@ margin-bottom: 5px;
 #header h1{
 font-size: 50px;
 text-shadow:5px 5px #000000;
-font-family: 'Devils Breeze Bold';     
+font-family: 'Devil Breeze Bold';     
 }
 #content{
 margin: 0 auto;
