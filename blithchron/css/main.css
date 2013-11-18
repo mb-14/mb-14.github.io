@@ -15,9 +15,28 @@ font-size: 180%;
 text-shadow:5px 5px #000000;
 font-family: 'Devil Breeze Bold';     
 }
-.heading{
-  //  display: none;
-}
+.heading span{display:inline-block;position:relative;letter-spacing:-1px;-webkit-transition:all 0.2s ease-out;}
+.heading span:hover{top:3px}
+.heading .char2, .heading .char11{color:#e36b23;text-shadow:#9b4d1f -4px 4px 0}
+.heading .char3, .heading .char10{color:#e6c92e;text-shadow:#9c8b26 -4px 4px 0}
+.heading .char4, .heading .char9{color:#5da028;text-shadow:#427021 -4px 4px 0}
+.heading .char5, .heading .char8{color:#4584be;text-shadow:#2f597f -4px 4px 0}
+.heading .char6, .heading .char7{color:#7073cf;text-shadow:#4a4d88 -4px 4px 0}
+.heading .char1, .heading .char12{color:#c44032;text-shadow:#863027 -4px 4px 0}
+.char13{color:#e36b23;text-shadow:#9b4d1f -4px 4px 0}
+ .char1{-webkit-transform:rotate(-3deg)}
+ .char3{top:-1px;-webkit-transform:rotate(2deg)}
+ .char4{top:-7px}
+ .char6{top:-7px;-webkit-transform:rotate(2deg)}
+ .char7{}
+ .char8{top:1px;-webkit-transform:rotate(-2deg)}
+ .char9{-webkit-transform:rotate(2deg)}
+ .char11{}
+ .char11:hover{-webkit-transition-duration:0.4s;}
+ .char10{top:2px;left:-20px;width:30px;-webkit-transform:rotate(-3deg)}
+ .char12{left:-14px}
+ .char13{left:-10px;-webkit-transform:rotate(2deg)}
+
 #home #registericon{
 display: none;    
 position: absolute;
