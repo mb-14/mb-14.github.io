@@ -1,27 +1,43 @@
 
 @font-face{
 font-family: 'Devil Breeze Bold';
-src: local('Devil Breeze Bold') url('../fonts/devil_breeze_bold.ttf');
+src: url('../fonts/devilbreezebold.ttf');
 font-weight: bold;
 }
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 #home #header{
-margin-top: -moz-calc(40% - 150px);
-margin-top: -webkit-calc(40% - 150px);
-margin-top: calc(40% - 150px);  
 text-align: center;
+position: relative;
+margin-top: 22%;
 }
 #home #header h1{
 font-size: 180%;
 text-shadow:5px 5px #000000;
 font-family: 'Devil Breeze Bold';     
 }
+#home #registericon{
+display: none;    
+position: absolute;
+top: 65%;
+left: 40%;
+height: 200px;
+}
+#home #registericon img{
+height: 100%;
+}
+#home #registericon img:hover{
+-webkit-transform: scale(1.09); 
+-moz-transform: scale(1.09); 
+-ms-transform: scale(1.09); 
+-o-transform: scale(1.09); 
+transform: scale(1.09); 
+}
 #home #eventsicon{
 display: none;    
 position: absolute;
-margin-top: 5px;
-left: 5px;
-height: 300px;
+top: 12%;
+left: 10%;
+height: 200px;
 }
 #home #eventsicon img{
 height: 100%;
@@ -36,9 +52,9 @@ transform: scale(1.09);
 #home #sponsorsicon{
 display: none;    
 position: absolute;
-margin-top: 5px;
-right: 10px ;
-height: 300px;
+top: 12%;
+right: 10% ;
+height: 200px;
 }
 #home #sponsorsicon img{
 height: 100%;
@@ -69,6 +85,11 @@ position: fixed;
 top:5px;
 left: 5px;
 }
+#stamp{
+position: fixed;
+top:5px;
+right: 5px;
+}
 #contentbox{
 position:fixed;
 top:50%;
@@ -89,17 +110,7 @@ text-align: left;
 font-family: Ubuntu;
 font-size: 22px;
 }
-.menu { pointer-events: auto;position: fixed; top: 200px; left: 50px; z-index: 99;  transition: opacity 0.5s;  text-align: left;}
-.present .menu { opacity: 1; }
-.menu i  { opacity: 0.4; }
-.menu img { opacity: 0.4; }
-.menu a:hover img { opacity: 1;  }
-.menu a:hover i { opacity: 1; transition: opacity 0.5s;  }
-.menu a { font-family: 'Quicksand Bold'; font-weight: 700; color: #fff; font-size: 22px; text-decoration: none; display: block; position: relative;}
-.menu span { position: relative; top: -8px; opacity: 0; left: 20px; transition: opacity 0.5s; }
-.menu a:hover span { opacity: 1; }
 
-.menu .menu_hover { position: absolute; top: -11px; left: -13px; opacity: 0; transition: opacity 0.5s;  }
 #preloader{
    margin:0px;
 	border:0px;

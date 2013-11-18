@@ -25,21 +25,12 @@
 
 
 <div id="logo">
-<img src="img/logo.png" height="50" style="float:left">
+<img src="img/logo.png" height="100" style="float:left">
+</div>
+<div id="stamp">
+<img src="img/blithchronstamp1.png" height="150">
 </div>
 <a href="#overview"><i style="pointer-events: auto;position:fixed;bottom:5px;right:5px" class="fa fa-eye fa-2x"></i></a>
-   <div class="menu" style="display: none;">
-           <ul>
-              <li class="animated fadeInDown"><a href="#home"><i class="fa fa-home fa-2x"></i><span>Home</span></a></li>
-              <li class="animated fadeInDown" style="-webkit-animation-delay: 0.5s;"><a href="#aboutus"><i class="fa fa-info-circle fa-2x"></i><span>About Us</span></a></li>
-              <li class="animated fadeInDown"  style="-webkit-animation-delay: 0.7s;"><a href="#events"><i class="fa fa-flag fa-2x"></i><span>Events</span></a></li>
-               <li class="animated fadeInDown" style="-webkit-animation-delay: 0.9s;"><a href="#sponsors"><i class="fa fa-inr fa-2x"></i><span>Sponsors</span></a></li>
-              <li class="animated fadeInDown" style="-webkit-animation-delay: 1.1s;"><a href="#pronites"><i class="fa fa-star fa-2x"></i><span>Pro shows</span></a></li>          
-              <li class="animated fadeInDown" style="-webkit-animation-delay: 1.3s;"><a href="#register"><i class="fa fa-file-text fa-2x"></i><span>Register</span></a></li>
-              <li class="animated fadeInDown" style="-webkit-animation-delay: 1.5s;"><a href="#contactus"><i class="fa fa-phone fa-2x"></i><span>Contact Us</span></a></li>
-           </ul>
-        </div>
-
 
 <div id="impress">
 
@@ -51,6 +42,7 @@
 </div>
 <a  class="animated bounceInLeft"  id="eventsicon" href="#events"><img src="img/events_icon.png"></a>
 <a class="animated bounceInRight"  id="sponsorsicon"  href="#sponsors"><img src="img/sponsors_icon.png"></a>
+<a class="animated bounceInUp"  id="registericon"  href="#register"><img src="img/register_icon.png"></a>
 </div>
     <div id="aboutus" class="step slide" data-x="2000" data-y="-1500" data-scale="2">
         <div id="header">  
@@ -83,8 +75,8 @@ So come one and all at IIT Gandinagar to witness two days of fun and frolic.</p>
             <div class="box">6</div>
   </div>
     </div>
-   <div id="sponsors" class="step slide" data-x="-500" data-y="3500" data-rotate="90" data-scale="2">
-       <img src="img/sponsors_icon.png" height="400">
+   <div id="sponsors" class="step slide" data-x="-500" data-y="3200" data-rotate="90" data-scale="2">
+       <div id="header"><h1>Sponsors</h1></div>
     </div>
 
     <div id="pronites" class="step slide" data-x="-3800" data-y="600"  data-rotate="180" data-scale="2">
@@ -124,6 +116,7 @@ if ("ontouchstart" in document.documentElement) {
                   $(".menu").show();
                   $("#eventsicon").show();
                   $("#sponsorsicon").show();
+                  $("#registericon").show();
                 impress().init();
                 impress().goto("home");
 
