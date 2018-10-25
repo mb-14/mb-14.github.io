@@ -15,7 +15,7 @@ links:
     url:          /archive
     external:     false
   - name:         GitHub
-    url:          http://github.com/mb-14
+    url:          https://github.com/mb-14
     external:     true
 
 # Build settings
