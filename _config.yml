@@ -3,6 +3,8 @@ title: coding chronicles #website title
 url: https://mb-14.github.io # the base hostname & protocol for your site
 baseurl: # the sub-path of your site, e.g. /blog/
 
+google_analytics: true
+disqus_shortname: mb14
 
 # Links settings
 links:
