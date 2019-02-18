@@ -132,7 +132,7 @@ Lets do a size comparison between the original embeddings and the codes + centro
 ```python
 original_size = original_embeddings.nbytes
 new_size = codes.nbytes + centroids.nbytes
-print("Size reduction: {:f}%".format((size - new_size) * 100 / size))
+print("Size reduction: {:f}%".format((original_size - new_size) * 100 / original_size))
 ```
 **Output:**
 ```
@@ -143,7 +143,7 @@ That's a pretty significant reduction in size with only a small decrease in accu
 
 # Loading vectors using tensorflow.js
 
-The final codes and centroids generated using product quantization along with the vocabulary are bundled into a JSON file. The vectors are then loaded on the browser using [tensorflow.js](https://js.tensorflow.org/). I've written a javascript library with tfjs which lets you unpack the vectors and reconstruct word embeddings. It also lets you search a word's nearest neighbors and evaluate word analogies. 
+The final codes and centroids generated using product quantization along with the vocabulary are bundled into a [JSON file](https://github.com/mb-14/embeddings.js/blob/master/demo/assets/model.json). The vectors are then loaded on the browser using [tensorflow.js](https://js.tensorflow.org/). I've written a javascript library with tfjs which lets you unpack the vectors and reconstruct word embeddings by making lookups to the database of centroids. It also lets you search a word's nearest neighbors and evaluate word analogies. 
 
 You can checkout the implementation on Github: 
 <a target="_blank" href="https://github.com/mb-14/embeddings.js">https://github.com/mb-14/embeddings.js</a>
@@ -151,4 +151,4 @@ You can checkout the implementation on Github:
 # Future explorations
 The word analogy test might not be a good way to measure the usefulness of word embeddings in practical NLP tasks. Instead we can perform benchmarking on a task like sentiment analysis for a better measure of accuracy. 
 
-Deploying word embeddings is only the first step to implementing natural language based deep learning models in the browser. Fortunately libraries like tensorflow.js make it very easy to run complex graphs like RNNs and CNNs on the browser. Lets see if we can use both tfjs and embeddings.js to create something interesting!
+Deploying word embeddings is only the first step to implementing natural language based deep learning models in the browser. Fortunately, libraries like tensorflow.js make it very easy to run complex graphs like RNNs and CNNs on the browser. Lets see if we can use both tensorflow.js and embeddings.js to create something interesting!
