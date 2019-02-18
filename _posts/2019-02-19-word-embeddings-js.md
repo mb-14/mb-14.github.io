@@ -30,22 +30,25 @@ Although word embeddings are great, the pre-trained models are too large in size
 
 ## Code & Demo
 If you'd like to dive right into the code, you can go through this [python script](https://github.com/mb-14/embeddings.js/blob/master/main.py).
+
 I've also created a demo of the JS library which showcases features like nearest neighbor search and word analogy testing.
-You can checkout the demo on this link: <a target="_blank" href="https://mb-14.github.io/embeddings.js/demo/">https://mb-14.github.io/embeddings.js/demo/</a>
+You can check out the demo on this link: <a target="_blank" href="https://mb-14.github.io/embeddings.js/demo/">https://mb-14.github.io/embeddings.js/demo/</a>
 
 # Loading FastText vectors into Gensim
 
-We're going to load FastText's pre-trained 300 dimensional word vectors into Gensim. Gensim provides a nifty utility function to measure how accurately the vectors have captured the semantic relationships between different word pairs. It does this by evaluating different word analogy questions. For instance, the solution to the analogy question: man is to woman what king is to ________________?  is **queen** and should be verified by our model using simple algebraic operations:
+For this experiment, we'll be using the 300 dimensional word vectors for 50k most common English words only. Instead of downloading FasText's official vector files which contain 1 million words vectors, you can download the trimmed down version from this [link.](https://mb-14.github.io/static/crawl-300d-50K.vec.zip)
+
+### Gensim's word analogy test
+Gensim provides a nifty utility function to measure how accurately the vectors have captured the semantic relationships between different word pairs. It does this by evaluating different word analogy questions. For instance, the solution to the analogy question: man is to woman what king is to ________________?  is **queen** and should be verified by our model using simple algebraic operations:
 
 $$
     vec(king) - vec(man) + vec(woman) \approx vec(queen)
 $$
 
-Since the compression techniques are going to be lossy, we will be using the word analogies test in our experiments to measure the drop in accuracy at each compression step. For the analogy questions, we will be using a list provided by Google which tests the different types of analogies like geographical facts, morphological relationships and gender based analogies.
-
-**Note:** For this experiment, we'll be using the vectors for 50k most common english words only. 
+Since the compression techniques are going to be lossy, we will be using the word analogies test in our experiments to measure the drop in accuracy after each compression step. For the analogy questions, we will be using a [list](https://github.com/mb-14/embeddings.js/blob/master/questions-words.txt) provided by Google which tests different types of analogies like geographical facts, morphological relationships and gender based relationships.
 
 **Loading vectors into Gensim and evaluating accuracy:**
+
 ```python
 from gensim.models import KeyedVectors
 
@@ -53,7 +56,7 @@ def compute_accuracy(model):
     accuracy, _ = model.evaluate_word_analogies('questions-words.txt', restrict_vocab=50000)
     print("Accuracy: {:f}%".format(accuracy*100))
 
-model = KeyedVectors.load_word2vec_format('data/crawl-300d-50K.vec')
+model = KeyedVectors.load_word2vec_format('crawl-300d-50K.vec')
 # Compute baseline accuracy
 compute_accuracy(model)
 ```
@@ -83,7 +86,7 @@ model = KeyedVectors(vector_size=reduced_embeddings.shape[1])
 model.add(words, reduced_embeddings, replace=True)
 compute_accuracy(model)
 ```
-Output:
+**Output:**
 ```
 Accuracy: 85.662505%
 ```
@@ -92,7 +95,7 @@ There is no considerable drop in accuracy! Let's see if we can compress our embe
 
 # Compression technique 2: Product quantization
 
-Product quantization is a vector quantization technique used to produces a more compact representation of data while maintaining a minimal loss in information. The basic idea behind product quantization is to split the vectors into sub-regions and approximate the representation of the vectors in a sub-region with the closest matching centroid. Doing this allows us to store the vectors much more efficiently—instead of storing the original floating point values for each vector, we’re just going to store centroid IDs as integers. A vector can then be reconstructed by making lookups to the centroid database. 
+Product quantization is a vector quantization technique which produces a more compact representation of data while maintaining a minimal loss in information. The basic idea behind product quantization is to split the vectors into sub-regions and approximate the representation of a sub-region with the closest matching centroid. Doing this allows us to store the vectors much more efficiently—instead of storing the original floating point values for each vector, we’re just going to store centroid IDs as integers. A vector can later be reconstructed by making lookups to the centroid database. 
 
 | ![pq_compression]({{ site.url }}/assets/pq.png) | 
 |:--:| 
@@ -100,7 +103,7 @@ Product quantization is a vector quantization technique used to produces a more 
 
 To better understand how product quantization works, you should definitely read Chris McCormick's tutorial about product quantizers: <a href="http://mccormickml.com/2017/10/13/product-quantizer-tutorial-part-1/" target="_blank">http://mccormickml.com/2017/10/13/product-quantizer-tutorial-part-1/</a>
 
-We're going to use python's [pqkmeans](https://github.com/DwangoMediaVillage/pqkmeans) library to compute our database of centroids and assign centroid IDs for each word. Each word vector of 150D (after PCA) will be transformed to a compressed representation of 30 centroid IDs.
+We're going to use python's [pqkmeans](https://github.com/DwangoMediaVillage/pqkmeans) library to generate our database of centroids and assign centroid IDs for each word. Each word vector of 150D (after PCA) will be transformed to a compressed representation of 30 centroid IDs.
 
 ```python
 import pqkmeans
@@ -120,7 +123,7 @@ model = KeyedVectors(vector_size=reconstructed_embeddings.shape[1])
 model.add(words, reconstructed_embeddings, replace=True)
 compute_accuracy(model)
 ```
-Output:
+**Output:**
 ```
 Accuracy: 81.957310%
 ```
@@ -131,7 +134,7 @@ original_size = original_embeddings.nbytes
 new_size = codes.nbytes + centroids.nbytes
 print("Size reduction: {:f}%".format((size - new_size) * 100 / size))
 ```
-Output:
+**Output:**
 ```
 Size reduction: 93.000000%
 ```
