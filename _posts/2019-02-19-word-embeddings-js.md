@@ -32,7 +32,7 @@ Although word embeddings are great, the pre-trained models are too large in size
 If you'd like to dive right into the code, you can go through this [python script](https://github.com/mb-14/embeddings.js/blob/master/main.py).
 
 I've also created a demo of the JS library which showcases features like nearest neighbor search and word analogy testing.
-You can check out the demo on this link: <a target="_blank" href="https://mb-14.github.io/embeddings.js/demo/">https://mb-14.github.io/embeddings.js/demo/</a>
+You can check out the demo on this link: <a target="_blank" href="https://mb-14.github.io/embeddings.js/">https://mb-14.github.io/embeddings.js/</a>
 
 # Loading FastText vectors into Gensim
 
@@ -143,7 +143,7 @@ That's a pretty significant reduction in size with only a small decrease in accu
 
 # Loading vectors using tensorflow.js
 
-The final codes and centroids generated using product quantization along with the vocabulary are bundled into a [JSON file](https://github.com/mb-14/embeddings.js/blob/master/demo/assets/model.json). The vectors are then loaded on the browser using [tensorflow.js](https://js.tensorflow.org/). I've written a javascript library with tfjs which lets you unpack the vectors and reconstruct word embeddings by making lookups to the database of centroids. It also lets you search a word's nearest neighbors and evaluate word analogies. 
+The final codes and centroids generated using product quantization along with the vocabulary are bundled into a [JSON file](https://github.com/mb-14/embeddings.js/blob/master/assets/word-embeddings.json). The vectors are then loaded on the browser using [tensorflow.js](https://js.tensorflow.org/). I've written a javascript library with tfjs which lets you unpack the vectors and reconstruct word embeddings by making lookups to the database of centroids. It also lets you search a word's nearest neighbors and evaluate word analogies. 
 
 You can checkout the implementation on Github: 
 <a target="_blank" href="https://github.com/mb-14/embeddings.js">https://github.com/mb-14/embeddings.js</a>
