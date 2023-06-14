@@ -116,8 +116,8 @@ A key factor for the success of crowd-sourced benchmarks is that they have enoug
 
 ### Evolving learning environments
 
-One way to introduce novelty in tasks to test for generality is to design dynamic learning environments and problem domains which evolve along with the
-agent being trained to introduce evolving tasks with increasing difficulty and complexity.
+One way of introducing novel tasks for a system to solve is to design dynamic learning environments and problem domains that evolve along with the
+the capabilities of the system. These environments and domains continuously generate new tasks of increasing difficulty and complexity, enabling the system to progressively enhance its problem-solving skills.
 
 
 
