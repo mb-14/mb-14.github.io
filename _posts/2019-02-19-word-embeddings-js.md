@@ -3,7 +3,7 @@ layout: post
 title: "Optimizing word embeddings for the web"
 description: "Post-processing techniques for optimizing word embeddings for the browser"
 author: miroojin
-tags: [tech]
+tags: [nlp]
 ---
 
 # Introduction

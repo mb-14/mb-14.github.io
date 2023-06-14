@@ -32,5 +32,32 @@
         <script async defer src="https://sdk.soopr.co/soopr.js"></script>
       {%- endif -%}
     {%- endif -%}
+
+    <script>
+      let links = document.querySelectorAll('a.footnote-link');
+      let footnotes = document.querySelectorAll('.footnotes div');
+      let overlay = document.getElementsByClassName("footnotes")[0];
+      links.forEach(element => {
+          element.addEventListener('click', function(event) {
+              event.preventDefault();
+              event.stopPropagation();
+              let id = element.getAttribute('href').substring(1);
+              overlay.style.display = 'flex';
+              let footnote = document.getElementById(id);
+              footnote.style.display = 'block';
+          });
+      });
+      footnotes.forEach(el => {
+        el.addEventListener('click', function(event) {
+          event.stopPropagation();
+        })
+      });
+      overlay.addEventListener('click', function(event) {
+          overlay.style.display = 'none';
+          footnotes.forEach(el => {
+            el.style.display = 'none';
+          });
+      });
+  </script>
   </body>
 </html>
