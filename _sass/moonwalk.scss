@@ -307,6 +307,7 @@ mjx-container {
   justify-content: center;
   align-items: center;
   z-index: 99999;
+  font-size: 1rem;
 }
 
 .footnotes div {
@@ -314,5 +315,5 @@ mjx-container {
   background-color: var(--bg);
   max-width: 20rem;
   width: 100%;
-  padding: 1.75rem 1.25rem;
+  padding: 1rem 1rem;
 }
