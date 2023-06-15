@@ -20,7 +20,7 @@ Many individuals believe that LLMs have the potential to pave the way for the de
 
 This ability to be able to understand and perform a wide range of unforeseen tasks in different environments with minimal or no guidance might be one of the most important capabilities that can be engineered into AI systems. It is also the most common interpretation of general intelligence. But general intelligence is a really hard ability to measure. As the developer of an AI system, you cannot predict your system’s performance on unfamiliar tasks in unknown environments using the conventional black box testing approaches, commonly used in AI model evaluation. As a shallow proxy, we base our assessments on the system’s ability to do things that are cognitively challenging for humans. But this approach has been [infamously misleading](#misleading-tests){:.footnote-link}, primarily due to our anthropomorphic bias. What is challenging for us might not be challenging for machines. Achieving impressive results on cherry-picked tasks is no guarantee of an agent possessing human-level general intelligence. LLMs serve as the most recent testament to this principle.
 
-The potential of general-purpose systems is virtually limitless, they possess capabilities that extend beyond their original intended applications. Human beings are prime examples of systems exhibiting general-purpose intelligence. It is therefore understandable why many individuals and organisations aspire to develop AI systems that can match the level of general intelligence observed in humans. But before we make any progress towards developing these systems, we need to have a clear and precise understanding of _general intelligence_ so that we know what we’re working towards and more importantly, come up with a comprehensive and reliable set of benchmarks and tests that can measure general intelligence in AI systems.
+The potential of general-purpose systems is virtually limitless, they possess capabilities that extend beyond their original intended applications. Human beings are prime examples of systems exhibiting general-purpose intelligence. It is therefore understandable why many individuals and organisations aspire to develop AI systems that can match the level of general intelligence observed in humans. But before we make any progress towards developing these systems, we need to have a clear and precise understanding of _general intelligence_ so that we know what we’re working towards and, more importantly, come up with a comprehensive and reliable set of benchmarks and tests that can measure general intelligence in AI systems.
 
 ## What, exactly, are we measuring?
 
@@ -98,7 +98,7 @@ The Hutter Prize is a cash prize funded by [Marcus Hutter](#mhutter){:.footnote-
 
 According to Hutter, for an agent to make optimal predictions in any environment given a set of prior experiences to learn from, it needs to model (compress) the experiences into the [smallest possible summary](#mdl){:.footnote-link}. This principle is akin to Occam's razor which is a problem-solving guideline that recommends selecting the simplest possible explanation for any phenomenon.
 
-Hutter also claims that the best text compression algorithms would be the ones that _understand_ the text in the same way that humans would. The better you understand the data, the more you can delete pieces from it while compressing and reconstruct the missing pieces while decompressing.
+Hutter also claims that the best text compression algorithms would be the ones that _understand_ the text in the same way that humans would. The better you understand the data, the more you can delete pieces from it during compression and reconstruct the missing pieces during decompression.
 
 For example, consider the missing words in the following sentence:
 
@@ -116,7 +116,7 @@ When it comes to quantitatively measuring the generalization power of AI systems
 
 A better alternative would be crowd-sourced benchmarks such as [BIG Bench](https://github.com/google/BIG-bench) and [OpenAI's evals](https://github.com/openai/evals), which are more diverse and dynamic in nature compared to traditional benchmarks. These benchmarks introduce a wide range of failure modes that challenge the system’s adaptability.
 
-A key factor for the success of crowd-sourced benchmarks is that they have enough people contributing to them regularly with a stream of diverse and high-quality tasks.
+A key factor for the success of crowd-sourced benchmarks is that they should have enough people contributing to them regularly with a stream of diverse and high-quality tasks.
 
 ### Evolving learning environments
 
@@ -139,7 +139,7 @@ A comprehensive version of the test, conceived out of a [bet between Mitchell Ka
 
 ---
 
-While none of the benchmarks listed above offer definitive solutions for validating the existence of human-level general intelligence in AI systems, they do propose interesting alternatives to the common pitfall of relying solely on the performance of systems in specific, intellectually demanding tasks. As we continue to deploy increasingly capable AI systems to assist human civilization in various domains, we will see more such benchmarks being developed, reflecting the the evolving nature of our understanding and assessment of general intelligence.
+While none of the approaches listed above offer definitive solutions for validating the existence of human-level general intelligence in AI systems, they do propose interesting alternatives to the common pitfall of relying solely on the performance of systems on specific, intellectually demanding tasks. As we continue to deploy increasingly capable AI systems to assist our civilization in various domains, we will see many more such benchmarks being developed, reflecting the the evolving nature of our understanding and assessment of general intelligence.
 
 <div class="footnotes">
 <div markdown="1" id="misleading-tests">
@@ -189,6 +189,6 @@ This hypothesis is based on the [Minimum Description Length](https://en.wikipedi
 - [POWERPLAY: Training an Increasingly General Problem Solver](https://arxiv.org/abs/1112.5309)
 </div>
 <div markdown="1" id="longbet">
-In 2002, [Ray Kurzweil](https://en.wikipedia.org/wiki/Ray_Kurzweil) and [Mitchell Kapor](https://en.wikipedia.org/wiki/Mitch_Kapor) made a bet about whether a computer would pass the Turing Test by 2029. Kurzweil believed that a computer would pass the Turing Test by 2029, while Kapor believed that it would not happen. The terms of the bet can be found [here](https://longbets.org/1/#adjudication_terms).
+In 2002, [Ray Kurzweil](https://en.wikipedia.org/wiki/Ray_Kurzweil) and [Mitchell Kapor](https://en.wikipedia.org/wiki/Mitch_Kapor) made a bet about whether a computer would pass the Turing Test in the near future. Kurzweil believed that a computer would pass the Turing Test by 2029, while Kapor believed that it would not happen. The terms of the bet can be found [here](https://longbets.org/1/#adjudication_terms).
 </div>
 </div>
