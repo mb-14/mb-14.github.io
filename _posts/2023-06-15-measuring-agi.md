@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How do we measure AGI?"
+title: "How do we measure Artificial General Intelligence?"
 description: ""
 author: miroojin
 tags: [agi]
