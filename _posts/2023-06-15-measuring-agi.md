@@ -104,7 +104,7 @@ For example, consider the missing words in the following sentence:
 
 > _Deep learning <ins>&nbsp;&nbsp;&nbsp;[1]&nbsp;&nbsp;&nbsp;</ins> a subfield of <ins>&nbsp;&nbsp;&nbsp;[2]&nbsp;&nbsp;&nbsp;</ins> learning that involves the use <ins>&nbsp;&nbsp;&nbsp;[3]&nbsp;&nbsp;&nbsp;</ins> artificial neural <ins>&nbsp;&nbsp;&nbsp;[4]&nbsp;&nbsp;&nbsp;</ins> to model and understand complex patterns and representations._
 
-Someone who understands English can easily guess that [1] = **is** and [3] = **of**. Furthermore, an expert on AI would guess that [1] = **machine** and [4] = **networks**. This shows that the better you understand the text, the more you can delete pieces from it without loss. If a compression algorithm matches the reconstruction capabilities of a human, it should be regarded as having the same understanding.
+Someone who understands English can easily guess that [1] = **is** and [3] = **of**. Furthermore, an expert on AI would guess that [2] = **machine** and [4] = **networks**. This shows that the better you understand the text, the more you can delete pieces from it without loss. If a compression algorithm matches the reconstruction capabilities of a human, it should be regarded as having the same understanding.
 
 ### Simulated environments
 
