@@ -4,4 +4,9 @@ layout: default
 
 <h1 class="post-title">{{ page.title }}</h1>
 {% include date_and_social_share.html %}
-{{ content }}
+<div class="content">{{ content }}</div>
+<script>
+  document.querySelectorAll(".content a").forEach(function (elem) {
+    elem.setAttribute("target", "_blank");
+  });
+</script>

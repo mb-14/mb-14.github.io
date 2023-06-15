@@ -84,7 +84,7 @@ It's pretty evident that humans are great at all of these abilities. We should s
 
 Given that we're just moving up the spectrum of narrow to general AI systems, there is not a lot of work being done on benchmarks for general AI. Nevertheless, a few interesting approaches have surfaced, which are worth exploring.
 
-### [The Abstraction and Reasoning Corpus (ARC)](https://lab42.global/arc/){:target="\_blank"}
+### [The Abstraction and Reasoning Corpus (ARC)](https://lab42.global/arc/)
 
 The ARC dataset, created by [Francois Chollet](#fchollet){:.footnote-link}, is a set of tasks that are intended to serve as a benchmark for measuring learning efficiency. The task format is very simple: There are one or more sample demonstrations in which a grid of colored pixels is transformed into a new grid. The agent has to infer the abstract transformation rule from the demonstrations and apply it to a test input grid.
 
@@ -92,7 +92,7 @@ The ARC dataset, created by [Francois Chollet](#fchollet){:.footnote-link}, is a
 
 Each task contains very few sample demonstrations, which means the agent has to learn the grid transformation rule by looking at a few examples only. According to Chollet, this ability to learn to solve complex tasks from a few demonstrations is a key feature of general intelligence. Since the ARC dataset is fully solvable by humans, Chollet claims that any agent that is able to achieve human-level performance on the benchmark should be able to perform a wide range of tasks of a kind that would normally require human-like fluid intelligence.
 
-### [The Hutter Prize](http://prize.hutter1.net/){:target="\_blank"}
+### [The Hutter Prize](http://prize.hutter1.net/)
 
 The Hutter Prize is a cash prize funded by [Marcus Hutter](#mhutter){:.footnote-link}, which rewards data compression improvements on a 1GB Wikipedia dataset to encourage research in AI. Hutter believes that a good compressor will intelligently have to find regularities in data which is an intrinsically hard problem.
 
