@@ -82,7 +82,7 @@ It's pretty evident that humans are great at all of these abilities. We should s
 
 ---
 
-Given that we're just moving up the spectrum of narrow to general AI systems, there is not a lot of work being done on benchmarks for general AI. Nevertheless, a few interesting approaches have surfaced, which are worth exploring.
+Given that we have recently started transitioning from narrow AI to more general AI systems, there hasn't been a lot of emphasis on benchmarking general AI till now. Nevertheless, a few interesting approaches have surfaced, which are worth exploring.
 
 ### [The Abstraction and Reasoning Corpus (ARC)](https://lab42.global/arc/)
 
@@ -125,7 +125,7 @@ the capabilities of the system. These environments and domains continuously gene
 
 {% include image.html url='/assets/images/coevolution.png' description='Co-evolution of the system and the environment' %}
 
-Various approaches have been explored to foster task evolution in a useful way including [evolutionary algorithms](#ea-envs), [Generative Adversarial Networks](#gan-envs), and [hand-crafted heuristics](#custom-env-evolution).
+Various approaches have been explored to foster task evolution in a useful way including [evolutionary algorithms](#ea-envs){:.footnote-link}, [Generative Adversarial Networks](#gan-envs){:.footnote-link}, and [hand-crafted heuristics](#custom-env-evolution){:.footnote-link}.
 
 ### Good old Turing Test
 
@@ -143,7 +143,7 @@ While none of the benchmarks listed above offer definitive solutions for validat
 
 <div class="footnotes">
 <div markdown="1" id="misleading-tests">
-Over the past few decades, there has been a few highly publicized encounters between AI systems and human experts in board games such as [Chess](https://en.wikipedia.org/wiki/Deep_Blue_versus_Garry_Kasparov) and [Go](https://www.deepmind.com/research/highlighted-research/alphago), as well as video games like [Dota 2](https://openai.com/research/openai-five-defeats-dota-2-world-champions) and [Starcraft](https://www.deepmind.com/blog/alphastar-mastering-the-real-time-strategy-game-starcraft-ii). Despite these remarkable advancements, these systems still fall short when it comes to matching the generalization capabilities exhibited by humans.
+Over the past few decades, there have been a few highly publicized encounters between AI systems and human experts in board games such as [Chess](https://en.wikipedia.org/wiki/Deep_Blue_versus_Garry_Kasparov) and [Go](https://www.deepmind.com/research/highlighted-research/alphago), as well as video games like [Dota 2](https://openai.com/research/openai-five-defeats-dota-2-world-champions) and [Starcraft](https://www.deepmind.com/blog/alphastar-mastering-the-real-time-strategy-game-starcraft-ii). Despite these remarkable advancements, these systems still fall short when it comes to matching the generalization capabilities exhibited by humans.
 
 </div>
 <div markdown="1" id="fchollet">
@@ -174,15 +174,21 @@ This hypothesis is based on the [Minimum Description Length](https://en.wikipedi
 - [The Balloon Learning Environment - Autonomous navigation of stratospheric balloons](https://ai.googleblog.com/2022/02/the-balloon-learning-environment.html?hl=tr_TR&m=1)
 </div>
 <div markdown="1" id="ea-envs">
-POET, PAIRED
+**Examples:**
+- [POET - Endlessly Generating Increasingly Complex and Diverse Learning Environments](https://www.uber.com/en-IN/blog/poet-open-ended-deep-learning/)
+- [PAIRED - A New Multi-agent Approach for Adversarial Environment Generation](https://ai.googleblog.com/2021/03/paired-new-multi-agent-approach-for.html)
 </div>
 <div markdown="1" id="gan-envs">
-https://arxiv.org/abs/1805.00728, https://arxiv.org/abs/1705.06366
+**Examples:**
+- [Evolving Mario Levels using GANs](https://arxiv.org/abs/1805.00728)
+- [Automatic Goal Generation for Reinforcement Learning Agents](https://arxiv.org/abs/1705.06366)
 </div>
 <div markdown="1" id="custom-env-evolution">
-XLand, PowerPlay
+**Examples:**
+- [XLand - Deepmind's Open-ended 3D Environment](https://www.deepmind.com/blog/generally-capable-agents-emerge-from-open-ended-play)
+- [POWERPLAY: Training an Increasingly General Problem Solver](https://arxiv.org/abs/1112.5309)
 </div>
 <div markdown="1" id="longbet">
- [Link to terms](https://longbets.org/1/#adjudication_terms)
+In 2002, [Ray Kurzweil](https://en.wikipedia.org/wiki/Ray_Kurzweil) and [Mitchell Kapor](https://en.wikipedia.org/wiki/Mitch_Kapor) made a bet about whether a computer would pass the Turing Test by 2029. Kurzweil believed that a computer would pass the Turing Test by 2029, while Kapor believed that it would not happen. The terms of the bet can be found [here](https://longbets.org/1/#adjudication_terms).
 </div>
 </div>
