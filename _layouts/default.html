@@ -52,12 +52,14 @@
           event.stopPropagation();
         })
       });
+      if (overlay) {
       overlay.addEventListener('click', function(event) {
           overlay.style.display = 'none';
           footnotes.forEach(el => {
             el.style.display = 'none';
           });
       });
+    }
   </script>
   </body>
 </html>
