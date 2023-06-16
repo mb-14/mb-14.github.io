@@ -22,7 +22,7 @@ This ability to be able to understand and perform a wide range of unforeseen tas
 
 The potential of general-purpose systems is virtually limitless, they possess capabilities that extend beyond their original intended applications. Human beings are prime examples of systems exhibiting general-purpose intelligence. It is therefore understandable why many individuals and organisations aspire to develop AI systems that can match the level of general intelligence observed in humans. But before we make any progress towards developing these systems, we need to have a clear and precise understanding of _general intelligence_ so that we know what we’re working towards and, more importantly, come up with a comprehensive and reliable set of benchmarks and tests that can measure general intelligence in AI systems.
 
-## What, exactly, are we measuring?
+## What, exactly, are we trying to measure?
 
 ---
 
