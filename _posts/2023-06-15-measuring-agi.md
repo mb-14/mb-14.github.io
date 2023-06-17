@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How do we measure Artificial General Intelligence?"
+title: "Quantifying the Unquantifiable: Understanding and Measuring the Attributes of AGI"
 description: ""
 author: miroojin
 tags: [agi]
