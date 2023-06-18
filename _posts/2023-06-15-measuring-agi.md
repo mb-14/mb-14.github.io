@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quantifying the Unquantifiable: Understanding and Measuring the Attributes of AGI"
+title: "Measurable attributes of AGI and promising benchmarks"
 description: ""
 author: miroojin
 tags: [agi]
